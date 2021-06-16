@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Fraccion {
     Scanner scanner = new Scanner(System.in);
-    
+
     private double suma;
     private double resta;
     private double multiplicar;
@@ -71,4 +71,38 @@ public class Fraccion {
         System.out.println("Escribre la segunda fraccion: ");
         dato2 = scanner.nextDouble();
     }
+
+    public void calcularSuma(){
+        suma = dato1+dato2;
+    }
+    public void calcularResta(){
+        resta = dato1-dato2;
+    }
+    public void calcularMultiplicacion(){
+        multiplicar = dato1*dato2;
+    }
+    public void calcularDivision(){
+        dividir = dato1/dato2;
+    }
+    public void Mostrar() {
+        System.out.println("La multiplicacion es :"+getMultiplicar());
+        System.out.println("La division es :"+getDividir());
+        System.out.println("La resta es:"+getResta());
+        System.out.println("La suma es:"+getSuma());
+    }
+
+    public Fraccion(){
+
+    }
+    public static void main(String[] args) {
+        Fraccion fra= new Fraccion();
+        fra.obtenerDatos();
+        fra.calcularSuma();
+        fra.calcularResta();
+        fra.calcularMultiplicacion();
+        fra.calcularDivision();
+        fra.Mostrar();
+
+    }
+
 }
