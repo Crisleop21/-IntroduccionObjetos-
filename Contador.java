@@ -27,7 +27,7 @@ public class Contador{
     public Contador(){
 
     }
-    //constructor por defecto
+    //constructor con parametros
     public Contador(int cont){
         if (cont < 0 ) {
             this.cont = 0;            
